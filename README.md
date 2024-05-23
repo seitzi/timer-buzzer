@@ -29,3 +29,5 @@ I was able to source the LED matrix, buzzer, and even the battery holder from an
 ![Pi Pico](pictures/IMG_20240521_194359.jpg)
 
 ![open case](pictures/IMG_20240522_232655.jpg)
+
+![finished product 2](pictures/IMG_20240523_014922.jpg)
