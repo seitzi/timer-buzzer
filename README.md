@@ -7,7 +7,10 @@ a simple timer with a 5x5 LED matrix and buzzer based on Raspberry Pi Pico
 The Micropython code can be found in `main.py` and relies on the picozero library and [buzzer_music.py](https://github.com/james1236/buzzer_music) written by james1236, a neat code enabling to play songs from [onlinesequencer.net](https://onlinesequencer.net) on a buzzer!
 
 There is only one on/off switch and one button to set the time and reset the timer.
+
 The high speed of the Pi Pico allows muliplexing to show numbers on the LED matrix (controlling LEDs individually even though the LED matrix has only 10 pins - the trick is light up row by row, so fast that it looks to the human eye that all rows would be glowing).
+
+While running the timer, the LED matrix fills up from bottom to top. When the time is elapsed, one of 10 songs plays on the buzzer. The timer is restarted any time upon pressing the button.
 
 ## Hardware
 * Raspberry Pi Pico
@@ -15,7 +18,7 @@ The high speed of the Pi Pico allows muliplexing to show numbers on the LED matr
 * 5 100 Ohm resistors
 * piezo-electric buzzer
 * normally closed button
-* on/off (2-state) switch
+* on/off switch
 * 3 AAA batteries
 * 3D printed case (.stl files can be found in this repository) with 4 M3 threaded inserts and screws
 
